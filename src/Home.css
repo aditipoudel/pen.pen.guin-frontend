@@ -1,0 +1,553 @@
+/* categories */
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .main{
+    margin: 0 auto;
+
+  }
+  
+ 
+  .cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .cards_item {
+  display: flex;
+  padding: 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  
+  }
+  }
+  
+  @media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  
+   
+  }
+  }
+  
+  .categorycard {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  }
+  
+  .card_content {
+  padding: 1rem;
+  
+  }
+  
+  .card_title {
+  color: #111111;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  }
+  
+  .card_text {
+  color: #111111;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+  }
+  
+  
+
+.contact
+{
+  padding:2rem;
+  background-color:#f7f3f3;
+
+}
+
+
+/* cart */
+
+
+.cart-img{
+  width:100px;
+}
+.cart-img-img{
+  width: 5vw;
+}
+
+.cart-container {
+  border-radius:5px;
+  margin-top:1em;
+  padding:1em;
+}
+#carttotals {
+  margin-right:0;
+  margin-left:auto;
+}
+table {
+  margin-bottom:1em;
+  border-collapse:inherits;
+}
+table td, table th {
+  text-align:left;
+  padding:0.25em 1em;
+  border-bottom:1px solid #000000;
+}
+
+.cart-buttons {
+  width:auto;
+  margin-right:0;
+  margin-left:auto;
+  display:flex;
+  justify-content:flex-end;
+  padding:1em 0;
+}
+#emptycart {
+  margin-right:1em;
+}
+
+
+button{ 
+  border:1px solid #000000; 
+  color:#fff; 
+  background: rgb(20, 113, 213);
+  padding:0.64em;
+  font-size:1em; 
+  line-height:1; 
+  border-radius: 1.2em;
+
+}
+button{ 
+  border:1px solid #000000; 
+  color:#fff; 
+  background: rgb(20, 113, 213);
+  padding:0.64rem;
+  font-size:14px; 
+  line-height:1; 
+  border-radius: 1.2em;
+
+}
+#emptycart {
+  margin-right:1em;
+}
+table td:nth-last-child(1) {
+  text-align:right;
+}
+/* About page animation (bubble doesnt pop on devices  :( but on the desktop :| strange) */
+
+.wrapper {
+  display:flex;
+  border:transparent solid;
+  height:auto;
+  justify-content:center;
+}
+
+.yo {
+ background-image:url("./assets/about.jpg");
+  background-repeat:no-repeat;
+  width:100px;
+  height:100px;
+  margin:50px 10px 30px 50px;
+  transition:0.3s ease;
+  border:transparent solid;
+  z-index:100;
+}
+
+.yo:hover ~ .bubble{
+  transform:translateY(10px);
+  transition:0.3s ease;
+  opacity:0.3;
+}
+
+.bubble {
+  background-image:url("https://image.flaticon.com/icons/svg/126/126501.svg");
+  background-repeat:no-repeat;
+  width:70px;
+  height:auto;
+  margin:0px 30px 0px 0px;
+  transition:0.3s ease;
+  border:transparent solid;
+  transform:translateY(30px);
+  opacity:0;
+}
+
+
+/* for about us section */
+
+.about .heading h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.about .heading h2 span {
+  color: #b86d18;
+}
+.about p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #999999;
+  margin: 20px 0 15px;
+  padding: 0;
+}
+.about-row{
+  display:flex;
+  padding: 0.25rem;
+}
+@media screen and (max-width:46rem) {
+  .about-row{
+    display:grid;
+    padding: 0.25rem;
+  }
+}
+li{
+  font-size: 12px;
+}
+
+.single-product-container{
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+}
+.single-product-container img{
+
+width: 20vw;}
+
+
+.column{
+  padding: 0.25rem;
+
+}
+@media screen and (max-width:46rem) {
+  .single-product-container{
+    display:grid;
+    padding: 5rem;
+  }
+}
+
+/* the checkout page*/
+
+.test{
+  width: 60%;
+  background: rgb(255, 255, 255);
+
+}
+
+
+
+.medium{
+  width: 200px;
+}
+
+/* for the order page */
+
+input:focus {
+  outline: none !important;
+  border-color: #69B692;
+}
+.row {
+  margin: 20px 0;
+  width: 100%;
+  padding: 0;
+  display: table;
+}
+.col2 {
+  display: table;
+  width: 47%;
+  float: left;
+}
+.col2:nth-child(2) {
+  float: right;
+  display: table;
+}
+
+.btn {
+  margin-right: 3%;
+}
+
+
+@media screen and (max-width: 56rem) {
+
+  .col2 {
+  display: table;
+  width: 100%;
+  float: left;
+}
+}
+label {
+  line-height: 20px;
+  color: #d15151;
+  display: table-header-group;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+table{
+  /* width:100%; */
+  table-layout: fixed;
+}
+
+.cartTable{
+width: 100%;
+table-layout: fixed;
+}
+.checkoutth table th {
+ 
+  padding:1em;
+  border-bottom:1px solid #E0E4CC;
+}
+
+/* for the comment  */
+.comment{
+  padding: 1rem;
+  margin: 20px 30px;
+  display: flex;
+  background-color: rgb(236, 255, 255);
+}
+.commentPic{
+  max-width: 80px;
+  max-height: 80px;
+border-radius: 30px;
+margin-right: 1.25rem;
+}
+
+/* for admin dahbaord*/
+
+.nowrap
+{
+
+  white-space: nowrap;
+  padding: 1rem ;
+}
+.overflow{
+  overflow: scroll;
+  display: flex;
+
+ justify-content: center;
+}
+@media screen and (max-width: 56rem) {
+  .overflow{
+    overflow: scroll;
+    justify-content: unset;
+
+  }
+}
+
+
+
+
+ /* for table try 
+  .my_account_orders {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 600px;
+  width: 100%;
+} */
+/* for table*/
+
+/* Zebra striping */
+tr:nth-of-type(even) { 
+  background:  rgb(255, 255, 255); 
+}
+th { 
+  background: rgb(255, 255, 255); 
+  color: rgb(0, 0, 0); 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid rgb(0, 0, 0); 
+  text-align: left; 
+}
+
+
+/* for about us page*/
+/* 
+Tribute website CSS
+
+  author: J. Javier 
+  September 2021
+
+  A plain CSS stylesheet, nothing fancy. No flexbox etc.
+
+*/
+
+#main {
+  font-size: 1.1em;
+}
+
+#quote {
+  max-width: 90%;
+}
+
+#image {
+  max-width: 90%;
+  border: 15px solid #f0f3ed;
+  height: auto;
+  display: block;
+}
+
+/* this should be a class but the test case won't pass if implemented that way  */
+#img-caption,
+#city-img-caption {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+#tribute-info {
+  max-width: 75%;
+}
+
+#city-image {
+  border: 5px solid #000;
+  max-width: 100%;
+  display: block;
+}
+
+#exhibitions {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+.exhibition-info {
+  font-size: 0.8em;
+}
+
+.footnote {
+  font-size: 0.6em;
+  font-style: italic;
+  font-weight: light;
+  color: #000;
+}
+
+h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 2em;
+}
+h2#schedule-header {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h5#quote {
+  font-weight: 200;
+  font-size: 0.824rem;
+  font-style: italic;
+  max-width: 75%;
+}
+
+/* for map*/
+.responsive-map{
+  overflow: hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  margin: 1rem;
+  height:0;
+  }
+  .responsive-map iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
+
+  .Homeimage
+  {
+    width: 80%;
+    margin-top: 20px;
+  }
+/* 
+  home page features page */
+
+  .separator {
+      display: inline-block;
+      text-transform: capitalize;
+      margin-bottom: 30px;
+  }
+
+  .separator img{
+    width: 40px;
+    height: auto;
+  }
+
+
+  .single_feature{
+  background: #fff none repeat scroll 0 0;
+  box-shadow:0 2px 30px rgba(0, 0, 0, 0.10);
+  margin-bottom: 30px;
+  padding: 40px 40px;
+
+
+  }
+
+  .single_feature h3 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight:400;
+    margin-top:0px;
+    overflow: hidden;
+  }
+  .containerfeature{
+padding: 1rem;
+width: 100%;
+
+  }
+  .cardcolor{
+    background-color: rgb(241, 238, 234);
+    padding: 1rem;
+  }
+  .rowfeature{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+  @media screen and (max-width: 56rem) {
+    .rowfeature{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+  
+  }  @media screen and (max-width: 36rem) {
+    .rowfeature{
+      display:grid;
+      grid-template-columns: 1fr;
+      
+    }
+  
+  }
+
+
+  .feature_icon img{
+    width: 60px;
+    height: auto;
+  }
+  
+  .amail
+  {
+    color: #c0c0c0;
+    font-size: 0.825rem;
+  }
